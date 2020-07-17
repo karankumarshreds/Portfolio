@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static '/style/main.css' %}" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-box">
+            <img class="logo" src="{% static '/images/linked.png' %}" alt="linkedin" />
+            <img class="logo" src="{% static '/images/git.png' %}" alt="github" />
+            <img class="logo" src="{% static '/images/insta.png' %}" alt="insta" />
+        </div>
+        <div class="text-box">
+            <img class="avatar" src="{% static '/images/avatar.png' %}" alt="avatar" />
+            <h1 class="heading-primary">
+                <span class="heading-primary-main">KARAN KUMAR</span>
+                <span class="heading-primary-sub" id="typing"></span>
+            </h1>
+            <button class="resume">RESUME</button>
+        </div>
+    </header>
+    <script src="../../static/scripts/index.js"> </script>
+</body>
+
+</html>
